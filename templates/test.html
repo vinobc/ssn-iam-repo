@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block main %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input:valid {
+  color: green;
+}
+input:invalid {
+  color: red;
+}
+input[type=submit] {
+    width: 10em;  height: 2em;
+}
+</style>
+<main class="hero-section">
+<div class="container">
+
+<div class="row">
+  <div class="column" style="background-color:#0E69B2; border: 2px solid yellow;">
+    <h2>Part A</h2>
+    <form action="#" method="POST">
+
+      <label for="one">1</label> 
+      <input type="text"  name="q-one" id="one" pattern="[0-2]{1}" required/> <br><br>
+
+      <label for="two">2</label> 
+      <input type="text"  name="q-two" id="two" pattern="[0-2]{1}" required/><br><br>
+
+      <label for="three">3</label> 
+      <input type="text"  name="q-three" id="three" pattern="[0-2]{1}" required/><br><br>
+
+      <label for="four">4</label> 
+      <input type="text"  name="q-four" id="four" pattern="[0-2]{1}" required/><br><br>
+
+      <label for="five">5</label> 
+      <input type="text"  name="q-five" id="five" pattern="[0-2]{1}" required/><br><br>
+
+      <label for="six">6</label> 
+      <input type="text"  name="q-six" id="six" pattern="[0-2]{1}" required/>
+
+
+  </div>
+  <div class="column" style="background-color:#0E69B2; border: 2px solid yellow">
+    <h2>Part B</h2>
+    
+      
+      <label for="seven_a">7 (a)</label> 
+      <input type="text"  name="q-seven_a" id="seven_a" pattern="[0-3]{1}" required/><br><br>
+
+      <label for="seven_b">7 (b)</label> 
+      <input type="text"  name="q-seven_b" id="seven_b" pattern="[0-3]{1}" required/><br><br>
+
+    
+      <label for="eight_a">8 (a)</label> 
+      <input type="text"  name="q-eight_a" id="eight_a" pattern="[0-3]{1}" required/><br><br>
+
+      <label for="eight_b">8 (b)</label> 
+      <input type="text"  name="q-eight_b" id="eight_b" pattern="[0-3]{1}" required/><br><br>
+
+      
+      <label for="nine_a">9 (a)</label> 
+      <input type="text"  name="q-nine_a" id="nine_a" pattern="[0-3]{1}" required/><br><br>
+
+      <label for="nine_b">9 (b)</label> 
+      <input type="text"  name="q-nine_b" id="nine_b" pattern="[0-3]{1}" required/><br><br>
+
+  </div>
+  <div class="column" style="background-color:#0E69B2; border: 2px solid yellow">
+    <h2>Part C</h2>
+
+
+      <label for="ten_a">10 (a)</label> 
+      <input type="text"  name="q-ten_a" id="ten_a" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="ten_b">10 (b)</label> 
+      <input type="text"  name="q-ten_b" id="ten_b" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="eleven_a">11 (a)</label> 
+      <input type="text"  name="q-eleven_a" id="eleven_a" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="eleven_b">11 (b)</label> 
+      <input type="text"  name="q-eleven_b" id="eleven_b" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="twelve_a">12 (a)</label> 
+      <input type="text"  name="q-twelve_a" id="twelve_a" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="twelve_b">12 (b)</label> 
+      <input type="text"  name="q-twelve_b" id="twelve_b" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="thirteen_a">13 (a)</label> 
+      <input type="text"  name="q-thirteen_a" id="thirteen_a" pattern="[0-5]{1}" required/><br><br>
+
+      <label for="thirteen_b">13 (b)</label> 
+      <input type="text"  name="q-thirteen_b" id="thirteen_b" pattern="[0-5]{1}" required/><br><br>
+    </div>
+ <!-- <div>
+      <center><input type="submit" name="submit" style = "font-size:1em"></center>
+</div>
+ -->
+  <div class="clearfix"></div>
+
+{% endblock %}
+
